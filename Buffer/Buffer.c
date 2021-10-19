@@ -1,13 +1,13 @@
 /*******************************************************************************
- * Title: Basic Ring Buffer
+ * @Summary: Basic Ring Buffer
  * 
- * Author: Matthew Spinks
+ * @author Matthew Spinks
  * 
  * Date: Dec. 6, 2019   Original creation
  * 
- * File: Buffer.c
+ * @File Buffer.c
  * 
- * Description:
+ * @Description
  *      A basic 8-bit ring buffer. To create a buffer, the minimum you will 
  *      need is a buffer object, an array pointer, and the size of the array.
  * 

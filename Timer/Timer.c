@@ -5,7 +5,7 @@
  * 
  * Date: Dec. 6, 2019   Original creation
  * 
- * @File Name Timer.c
+ * @File Timer.c
  * 
  * @Description
  *      A generic, free-running timer to do whatever you need. You must 

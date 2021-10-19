@@ -1,24 +1,20 @@
 /*******************************************************************************
- * Title: Basic Ring Buffer Header
+ * @Summary Basic Ring Buffer Header
  * 
- * Author: Matthew Spinks
+ * @author Matthew Spinks
  * 
  * Date: Dec. 6, 2019   Original creation
  * 
- * File: Buffer.h
+ * @File Buffer.h
  * 
- * Description:
- *      An interface to be implemented in other c files. This is for a basic
- *      8 bit ring buffer. To create a buffer, the minimum you will need is a 
- *      buffer type, an array pointer, and the size of the array.
+ * @Description
+ *      A basic 8-bit ring buffer. To create a buffer, the minimum you will 
+ *      need is a buffer type, an array pointer, and the size of the array.
  * 
- *      I did it this way to make the buffer easier to interface with. It
- *      lets you control the size of the array so that your not limited to
- *      a fixed size, or to a fixed number of arrays. Also, since compilers
- *      like XC-8 don't allow the use of malloc.
- * 
- *      For each function, you will pass the buffer that you wish to perform
- *      the operation on.
+ *      This library lets you control the size of your ring buffer as well as 
+ *      the way the buffer handles overflows. Multiple functions are provided 
+ *      to get the status of the buffer. For each function, you will pass the 
+ *      buffer that you wish to perform the operation on.
  * 
  *      There are two initializations: One has a boolean which will allow data 
  *      to be overwritten when placing data in the buffer. The default setting

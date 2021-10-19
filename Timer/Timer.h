@@ -5,7 +5,7 @@
  * 
  * Date: Dec. 6, 2019   Original creation
  * 
- * @File Name Timer.h
+ * @File Timer.h
  * 
  * @Description
  * 
@@ -26,9 +26,9 @@
 
 typedef struct Timer Timer;
 
-// callback function pointers. The context is so that you can know which timer 
-// initiated the callback. This is so that you can service multiple timer 
-// callbacks with the same function if you desire.
+/*  callback function pointer. The context is so that you can know which timer 
+    initiated the callback. This is so that you can service multiple timer 
+    callbacks with the same function if you desire. */
 typedef void (*TimerCallbackFunc)(Timer *timerContext);
 
 // Free timer (with bit field)

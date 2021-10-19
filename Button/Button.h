@@ -5,7 +5,7 @@
  * 
  * Date: Dec. 6, 2019   Original creation
  * 
- * @File Name Button.h
+ * @File Button.h
  * 
  * @Description
  * 
@@ -53,12 +53,10 @@ enum ButtonType
     LONG_PRESS_TYPE,
 };
 
-/*  callback function pointers. The context is so that you can know which timer 
-    initiated the callback. This is so that you can service multiple timer 
-    callbacks with the same function if you desire. */
+/*  callback function pointers */
 //typedef void (*TimerCallbackFunc)(Timer *timerContext); // TODO
 
-// Free timer (with bit field)
+/* Button object with counters and flags (with bit field) */
 struct Button
 {
     uint16_t pressDebouncePeriod;
@@ -94,18 +92,27 @@ struct Button
 // ***** Function Prototypes ***************************************************
 
 void Button_InitMs(Button *self, uint16_t pressDebounceMs, uint16_t releaseDebounceMs, uint16_t tickMs);
+
 void Button_InitWithLongPressMs(Button *self, uint16_t pressDebounceMs, uint16_t releaseDebounceMs, uint16_t longPressMs, uint16_t tickMs);
+
 void Button_Tick(Button *self, bool isPressed);
+
 bool Button_GetShortPress(Button *self);
+
 bool Button_GetLongPress(Button *self);
+
 void Button_ClearShortPressFlag(Button *self);
+
 void Button_ClearLongPressFlag(Button *self);
+
 bool Button_GetButtonDownEvent(Button *self);
+
 bool Button_GetButtonUpEvent(Button *self);
+
 void Button_ClearButtonDownFlag(Button *self);
+
 void Button_ClearButtonUpFlag(Button *self);
 
-//void Timer_ClearFlag(Timer *self);
 //void Timer_SetFinishedCallback(TimerCallbackFunc);
 
 #endif	/* BUTTON_H */
