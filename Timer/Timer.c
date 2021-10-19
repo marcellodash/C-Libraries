@@ -3,6 +3,8 @@
  * 
  * @author  Matthew Spinks
  * 
+ * Date: Dec. 6, 2019   Original creation
+ * 
  * @File Name Timer.c
  * 
  * @Description

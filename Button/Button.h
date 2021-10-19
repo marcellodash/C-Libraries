@@ -3,6 +3,8 @@
  * 
  * @author  Matthew Spinks
  * 
+ * Date: Dec. 6, 2019   Original creation
+ * 
  * @File Name Button.h
  * 
  * @Description
@@ -51,10 +53,10 @@ enum ButtonType
     LONG_PRESS_TYPE,
 };
 
-// callback function pointers. The context is so that you can know which timer 
-// initiated the callback. This is so that you can service multiple timer 
-// callbacks with the same function if you desire.
-//typedef void (*TimerCallbackFunc)(Timer *timerContext);
+/*  callback function pointers. The context is so that you can know which timer 
+    initiated the callback. This is so that you can service multiple timer 
+    callbacks with the same function if you desire. */
+//typedef void (*TimerCallbackFunc)(Timer *timerContext); // TODO
 
 // Free timer (with bit field)
 struct Button

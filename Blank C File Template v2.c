@@ -3,40 +3,29 @@
  * 
  * @author  Matthew Spinks
  * 
+ * Date:    Original creation
+ * 
  * @File Name 
  * 
  * @Description
  * 
 *******************************************************************************/
 
-// <editor-fold defaultstate="collapsed" desc="Includes">
 #include <stdint.h>
 #include <stdbool.h>
-// </editor-fold>
+
 
 // ***** Defines ***************************************************************
 
-// <editor-fold defaultstate="collapsed" desc="Defines">
-
-// </editor-fold>
 
 // ***** Function Prototypes ***************************************************
 
-// <editor-fold defaultstate="collapsed" desc="Function Prototypes">
-
-// </editor-fold>
 
 // ***** Global Variables ******************************************************
 
-// <editor-fold desc="Global Variables">
-
-// </editor-fold>
 
 // ***** Initialize ************************************************************
 
-// <editor-fold defaultstate="collapsed" desc="Initialize">
-
-// </editor-fold>
 
 ////////////////////////////////////////////////////////////////////////////////
 //                                                                            //
